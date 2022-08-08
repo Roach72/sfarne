@@ -9,54 +9,77 @@
 <body>
 
     <div class="container-fluid">
-        <div class="main-contant">
-        <section class="log-in">
+      <section class="top-menu">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg bg-light w-100">
+                <div class="container-fluid">
+                    <a href="index.html" class="navbar-brand p-0">
+                        <img src="images/1.svg" alt="">
+                    </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                      <li class="nav-item p-2 ">
+                        <a class="nav-link active" aria-current="page" href="index.html">الرئيسيه</a>
+                      </li>
+                      <li class="nav-item p-2">
+                        <a class="nav-link" href="log.html"> تسجيل الدخول</a>
+                      </li>
+                      <li class="nav-item p-2">
+                        <a class="nav-link" href="new.html">  انشاء حساب جديد</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </section>
+      <section class="log-in">
+        <div class="contant">
+          <div class="titels">
+            <h5> انشاء حساب جديد</h5>
+            <P>تسجيل الدخول وانشاء حساب جديد</P>
+          </div>
+          <div class="row">
+          <div class="col-12 formes">
             <form>
-                <!-- Email input -->
-                <div class="form-outline mb-4">
-                    <input type="text" id="form2Example1" class="form-control" />
-                    <label class="form-label" for="form2Example1">الاسم بالكامل </label>
-                  </div>
-                <div class="form-outline mb-4">
-                    <input type="email" id="form2Example1" class="form-control" />
-                    <label class="form-label" for="form2Example1">تاريخ الميلاد </label>
-                  </div>
-                <div class="form-outline mb-4">
-                  <input type="email" id="form2Example1" class="form-control" />
-                  <label class="form-label" for="form2Example1">Email address</label>
-                </div>
-              
-                <!-- Password input -->
-                <div class="form-outline mb-4">
-                  <input type="password" id="form2Example2" class="form-control" />
-                  <label class="form-label" for="form2Example2">Password</label>
-                </div>
-                <div class="form-outline mb-4">
-                    <input type="password" id="form2Example2" class="form-control" />
-                    <label class="form-label" for="form2Example2">confirm password</label>
-                  </div>
-              
-                <!-- 2 column grid layout for inline styling -->
-                <div class="row mb-4">
-                  <div class="col d-flex justify-content-center">
-                    <!-- Checkbox -->
-                    <div class="form-check">
-                        <a href="log.html"> هل لديك حساب بالفعل </a>
-                    </div>
-                  </div>
-              
-                  <div class="col">
-                    <!-- Simple link -->
-                    <a href="#!">هل نسيت كلمه المرور</a>
-                  </div>
-                </div>
-              
-                <!-- Submit button -->
-                <button type="button" class="btn btn-primary btn-block mb-4"> تسجيل الدخول</button>
-              
-              </form>
-        </section>
-    </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">الاسم بالكامل </label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">اسم المستخدم </label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"> رقم الموبايل متبع بالمفتاح الدولي </label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">البريد الالكتروني </label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">لا تشارك البريد الالكتروني مع احد</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">كلمه المرور</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">تاكيد كلمه المرور</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <button type="submit" class="btn btn-primary">تسجيل</button>
+            </form>
+            <div class="links">
+              <a href="new.html"><p>انشاء حساب جديد</p></a>
+              <a href="#"><p> هل نسيت كلمه المرور</p></a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
     </div>
 </body>
 </html>
