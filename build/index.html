@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سفرني</title>
 <script defer src="/js/bundle.js"></script><link href="/css/style.css" rel="stylesheet"></head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
 
 
   <div class="container-fluid">
         <section class="top-menu">
             <div class="row">
-                <nav class="navbar navbar-expand-lg bg-light w-100">
+                <nav class="navbar navbar-expand-lg bg-light w-100 col-12" id="navbar">
                     <div class="container-fluid">
                         <a href="index.html" class="navbar-brand p-0">
                             <img src="/fonts/1.svg" alt="">
@@ -48,16 +48,13 @@
           <div class="main-contant">
             <div class="contant">
               <div class="row">
-                <div class="col-lg-6 col-md-12">
-                  <div class="images">
-                    <img src="/images/8.jpg" alt="">
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                  <div class="titels">
-                    <h2>الشركه السياحيه الافضل في الوطن العربي</h2>
-                    <p>هدفنا مساعدتك وتيسير امورك ,لا تتردد في التواصل معنا فنحن هنا لنساعدك علي ايجاد كل ما تحتاج له </p>
-
+                <div class="col-12 card text-bg-dark">
+                  <img src="/images/15.jpg" class="card-img" alt="...">
+                  <div class="card-img-overlay">
+                    <h2 class="card-title">سفرني </h2>
+                    <p class="card-text">الشركه السياحيه الافضل في الوطن العربي</p>
+                    <p class="card-text"> هدفنا مساعدتك وتيسير امورك ,لاتتردد بالتواصل معنا فنحن هنا لمساعدتك علي ايجاد كل ما تحتاج له</p>
+                    <p class="card-text">ان كنت تبحث عن سكن او جوله سياحيه لتقضي افضل الاوقات فقد ودت طلبك</p>
                   </div>
                 </div>
               </div>
@@ -71,39 +68,63 @@
             <h1>  خدماتنا </h1>
           </div>
           <div class="row">
-            <div class="col-lg-6 col-md-12">
-              <div class="card" style="width: 18rem;">
-                <img src="/images/16.jpg" class="card-img-top" alt="16.jpg">
-                <div class="card-body">
-                  <h5 class="card-text">حجز سكن</h5>
-                  <p class="card-text">نقدم لكم خدمه الحجوزات في اقضل الفنادق والشقق ذات الاطلاله الرائعه والقريبه من جميع الخدمات</p>
+            <div class="col-12">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="/images/19.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-text">حجز سياره</h5>
+                      <p class="card-text">نقدم لكم خدمه حجز سياره سواء سياره اتوماتيكيه او سياره عاديه </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-12">
-              <div class="card" style="width: 18rem;">
-                <img src="/images/19.jpg" class="card-img-top" alt="16.jpg">
-                <div class="card-body">
-                  <h5 class="card-text">حجز سياره</h5>
-                  <p class="card-text">نقدم لكم خدمه حجز سياره سواء سياره اتوماتيكيه او سياره عاديه </p>
+            <div class="col-12">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-text"> جولات سياحيه</h5>
+                      <p class="card-text">جولات سياحيه جولات سياحيه خاصه مع امهر السائقين كما نقدم جولات جماعيه باحدذ الباصات مع افضل المرشدين السياحين لذين يجيدون اللغه العربيه واللغه الانجليزيه </p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="/images/21.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-12">
-              <div class="card" style="width: 18rem;">
-                <img src="/images/21.jpg" class="card-img-top" alt="16.jpg">
-                <div class="card-body">
-                  <h5 class="card-text"> جولات سياحيه</h5>
-                  <p class="card-text">جولات سياحيه جولات سياحيه خاصه مع امهر السائقين كما نقدم جولات جماعيه باحدذ الباصات مع افضل المرشدين السياحين لذين يجيدون اللغه العربيه واللغه الانجليزيه </p>
+            <div class="col-12">
+            <div class="card mb-3">
+              <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="/images/20.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-text">  الاستقبال من المطار</h5>
+                      <p class="card-text">نقدم خدمه الاستقبال من الامطار وتوديعكم في لمطار بيحث يكون مندوبينا متواجد دايم لخدمتكم اثناء وصولكم وذهابكم للمطار مع افضل وسائل النق</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-12">
-              <div class="card" style="width: 18rem;">
-                <img src="/images/20.jpg" class="card-img-top" alt="16.jpg">
-                <div class="card-body">
-                  <h5 class="card-text">  الاستقبال من المطار</h5>
-                  <p class="card-text">نقدم خدمه الاستقبال من الامطار وتوديعكم في لمطار بيحث يكون مندوبينا متواجد دايم لخدمتكم اثناء وصولكم وذهابكم للمطار مع افضل وسائل النق</p>
+            <div class="col-12">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">حجز سكن </h5>
+                      <p class="card-text">نقدم لكم خدمه حجز في افضل الفنادق والشقق ذات الاطلاله الرائعه والقريبه من الجميع</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="/images/16.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
                 </div>
               </div>
             </div>

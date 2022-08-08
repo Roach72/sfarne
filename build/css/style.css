@@ -9589,7 +9589,10 @@ body {
 .top-menu .navbar {
   font-weight: bold;
   padding: 0 100px !important;
-  background: rgb(245, 234, 234) !important;
+  background: rgba(245, 234, 234, 0.6) !important;
+  position: fixed;
+  top: 0;
+  z-index: 3;
 }
 .top-menu .navbar a > img {
   width: 50px !important;
@@ -9599,56 +9602,57 @@ body {
   border-bottom: 1px solid #555;
 }
 
-.header .contant {
-  background: rgb(245, 234, 234);
-  text-align: center;
-}
-.header .contant:hover {
-  background-color: rgb(147, 147, 244);
-}
-.header .contant .images img {
+.header .contant .card img {
+  height: 500px;
   width: 100%;
-  border-radius: 20%;
 }
-.header .contant .titels h2 {
-  margin-top: 100px;
-  color: #555;
+.header .contant .card .card-img-overlay {
+  padding-right: 60px;
+  background-color: rgba(178, 173, 173, 0.4);
+  width: 100%;
+  height: 500px;
+  padding-top: 100px;
+}
+.header .contant .card .card-img-overlay h2 {
+  color: rgb(147, 147, 244);
   font-weight: bold;
+  border-right: 2px solid #555;
+  padding-right: 10px;
 }
-.header .contant .titels p {
-  font-size: 20px;
-  margin: 20px;
+.header .contant .card .card-img-overlay p {
+  font-weight: bold;
+  border-right: 1px solid #555;
+  padding-right: 4px;
 }
 
 .Our-services {
-  text-align: center;
   margin-top: 50px;
 }
 .Our-services .titles h1 {
+  text-align: center;
   padding: 40px;
   color: rgb(147, 147, 244);
   border-top: 2px solid rgb(245, 234, 234);
 }
-.Our-services .row {
-  text-align: center;
-  margin-top: 50px;
-}
 .Our-services .row .card {
-  border: 1px solid rgb(147, 147, 244);
-  margin: 50px 170px 10px 0;
+  width: 90%;
+  margin-bottom: 60px;
+  margin-right: 40px;
 }
 .Our-services .row .card img {
   padding: 3px;
+  width: 100%;
 }
 .Our-services .row .card .card-body h5 {
   color: rgb(147, 147, 244) !important;
 }
 .Our-services .row .card .card-body p {
-  font-size: 12px;
+  font-size: 18px;
   font-weight: bold;
 }
 
 .tours {
+  border-top: 1px solid #555;
   padding: 100px;
   text-align: center;
 }
@@ -9671,7 +9675,7 @@ body {
 }
 
 .contact-us {
-  background: rgba(243, 238, 238, 0.878);
+  border-top: 1px solid darkkhaki;
   padding: 20px 0 20px;
   margin-top: 30px;
 }
@@ -9713,7 +9717,7 @@ body {
   border-radius: 15%;
 }
 .informations .contant .card .card-body h5 {
-  color: rgb(147, 147, 244);
+  color: rgb(83, 72, 72);
   padding-bottom: 10px;
 }
 .informations .contant .card .card-body p {
@@ -9721,8 +9725,24 @@ body {
   font-size: 20px;
 }
 
+.informations1 {
+  margin: 50px 0;
+}
+.informations1 .contant .card img {
+  padding: 50px;
+  border-radius: 15%;
+}
+.informations1 .contant .card .card-body h5 {
+  color: rgb(147, 147, 244);
+  padding-bottom: 10px;
+}
+.informations1 .contant .card .card-body p {
+  text-align: center;
+  font-size: 20px;
+}
+
 .exhibition {
-  background: rgba(243, 238, 238, 0.878);
+  background: #edc9af;
 }
 .exhibition .contant .titels h1 {
   text-align: center;
@@ -9736,19 +9756,54 @@ body {
   margin: 1px;
 }
 
-.log-in {
-  margin: 100px 400px 0 0;
-  width: 30%;
+.exhibition1 {
+  background: rgb(196, 196, 242);
 }
-.log-in form {
-  border: 1px solid rgb(147, 147, 244);
-  padding: 25px 5px 5px 5px;
+.exhibition1 .contant .titels h1 {
+  text-align: center;
+  padding: 20px;
+}
+.exhibition1 .contant .row {
+  padding-bottom: 50px;
+}
+.exhibition1 .contant .row .card {
+  padding: 3px;
+  margin: 1px;
+}
+
+.log-in {
+  display: flex;
+  justify-content: start;
+  margin-top: 80px;
+}
+.log-in .contant {
+  border: 1px solid rgb(178, 178, 241);
+  width: 25%;
+  padding: 10px;
+  border-radius: 3%;
+}
+.log-in .contant .titels h5 {
+  color: rgb(67, 67, 234);
+  font-weight: bold;
+}
+.log-in .contant .titels p {
+  color: rgb(67, 67, 234);
+  font-size: 15px;
+}
+.log-in .contant .row .formes .form-label {
+  color: rgb(67, 67, 234);
+  font-size: 13px;
+}
+.log-in .contant .row .formes .form-text {
+  color: red;
+  font-size: 14px;
+}
+.log-in .contant .row .formes button {
+  width: 80%;
+  margin-bottom: 5px;
 }
 
 @media (max-width: 992px) {
-  .log-in {
-    margin: 40px 250px 0 0;
-  }
   .Our-services .titles h1 {
     margin-right: 60px;
   }
@@ -9758,11 +9813,11 @@ body {
   .tours .contant .card {
     margin-right: 64px !important;
   }
+  .log-in .contant {
+    width: 40%;
+  }
 }
 @media (max-width: 768px) {
-  .log-in {
-    margin: 40px 100px 0 0;
-  }
   .Our-services .row .card {
     margin: 50px 252px 10px 0 !important;
   }
@@ -9778,9 +9833,21 @@ body {
   .exhibition .contant .row .card {
     margin-right: 213px !important;
   }
+  .exhibition1 .contant .row .card {
+    margin-right: 213px !important;
+  }
+  .log-in .contant {
+    width: 70%;
+  }
 }
 @media (max-width: 576px) {
   .exhibition .contant .row .card {
     margin-right: 80px !important;
+  }
+  .exhibition1 .contant .row .card {
+    margin-right: 80px !important;
+  }
+  .log-in .contant {
+    width: 80%;
   }
 }
