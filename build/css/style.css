@@ -9602,25 +9602,27 @@ body {
   border-bottom: 1px solid #555;
 }
 
-.header .contant .carousel-inner {
-  position: relative;
-}
-.header .contant .carousel-inner img {
+.header .contant .card img {
+  height: 500px;
   width: 100%;
-  height: 600px;
 }
-.header .contant .carousel-inner .carousel-caption {
-  height: 600px !important;
-  position: absolute;
-  top: 25%;
+.header .contant .card .card-img-overlay {
+  padding-right: 60px;
+  background-color: rgba(178, 173, 173, 0.4);
+  width: 100%;
+  height: 500px;
+  padding-top: 100px;
 }
-.header .contant .carousel-inner .carousel-caption h3 {
+.header .contant .card .card-img-overlay h2 {
   color: rgb(147, 147, 244);
   font-weight: bold;
+  border-right: 2px solid #555;
+  padding-right: 10px;
 }
-.header .contant .carousel-inner .carousel-caption p {
-  color: rgb(147, 147, 244);
+.header .contant .card .card-img-overlay p {
   font-weight: bold;
+  border-right: 1px solid #555;
+  padding-right: 4px;
 }
 
 .Our-services {
@@ -9632,47 +9634,41 @@ body {
   color: rgb(147, 147, 244);
   border-top: 2px solid rgb(245, 234, 234);
 }
-.Our-services .row .center {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-.Our-services .row .center .card {
+.Our-services .row .card {
   width: 90%;
+  margin-bottom: 60px;
+  margin-right: 40px;
 }
-.Our-services .row .center .card img {
+.Our-services .row .card img {
   padding: 3px;
   width: 100%;
 }
-.Our-services .row .center .card .card-body h5 {
+.Our-services .row .card .card-body h5 {
   color: rgb(147, 147, 244) !important;
 }
-.Our-services .row .center .card .card-body p {
+.Our-services .row .card .card-body p {
   font-size: 18px;
   font-weight: bold;
 }
 
 .tours {
   border-top: 1px solid #555;
-}
-.tours .main-contant .contant .h h1 {
+  padding: 100px;
   text-align: center;
+}
+.tours .contant h1 {
   color: rgb(147, 147, 244);
-  margin: 50px 0;
+  margin-bottom: 20px;
 }
-.tours .main-contant .contant .center {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-.tours .main-contant .contant .center .card {
+.tours .contant .card {
+  margin-right: 200px;
   margin-bottom: 50px;
   border: 2px solid rgb(147, 147, 244);
 }
-.tours .main-contant .contant .center .card h5 {
+.tours .contant .card h5 {
   color: rgb(147, 147, 244);
 }
-.tours .main-contant .contant .center .card .btn {
+.tours .contant .card .btn {
   background: rgb(147, 147, 244);
   border: none;
   color: black;
@@ -9729,8 +9725,20 @@ body {
   font-size: 20px;
 }
 
-.second-informations .contant .card .card-body h5 {
+.informations1 {
+  margin: 50px 0;
+}
+.informations1 .contant .card img {
+  padding: 50px;
+  border-radius: 15%;
+}
+.informations1 .contant .card .card-body h5 {
   color: rgb(147, 147, 244);
+  padding-bottom: 10px;
+}
+.informations1 .contant .card .card-body p {
+  text-align: center;
+  font-size: 20px;
 }
 
 .exhibition {
@@ -9740,25 +9748,32 @@ body {
   text-align: center;
   padding: 20px;
 }
-.exhibition .contant .row .center {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+.exhibition .contant .row {
   padding-bottom: 50px;
 }
-.exhibition .contant .row .center .card {
+.exhibition .contant .row .card {
   padding: 3px;
   margin: 1px;
 }
 
-.second-exhibition {
+.exhibition1 {
   background: rgb(196, 196, 242);
+}
+.exhibition1 .contant .titels h1 {
+  text-align: center;
+  padding: 20px;
+}
+.exhibition1 .contant .row {
+  padding-bottom: 50px;
+}
+.exhibition1 .contant .row .card {
+  padding: 3px;
+  margin: 1px;
 }
 
 .log-in {
   display: flex;
-  justify-content: center;
-  text-align: center;
+  justify-content: start;
   margin-top: 80px;
 }
 .log-in .contant {
@@ -9789,19 +9804,49 @@ body {
 }
 
 @media (max-width: 992px) {
+  .Our-services .titles h1 {
+    margin-right: 60px;
+  }
+  .Our-services .row .card {
+    margin: 50px 300px 10px 0 !important;
+  }
+  .tours .contant .card {
+    margin-right: 64px !important;
+  }
   .log-in .contant {
     width: 40%;
   }
 }
 @media (max-width: 768px) {
+  .Our-services .row .card {
+    margin: 50px 252px 10px 0 !important;
+  }
   .tours .contant h1 {
     font-size: 20px;
+  }
+  .tours .contant .card {
+    margin-right: -83px !important;
+  }
+  .tours .contant .card h5 {
+    font-size: 20px;
+  }
+  .exhibition .contant .row .card {
+    margin-right: 213px !important;
+  }
+  .exhibition1 .contant .row .card {
+    margin-right: 213px !important;
   }
   .log-in .contant {
     width: 70%;
   }
 }
 @media (max-width: 576px) {
+  .exhibition .contant .row .card {
+    margin-right: 80px !important;
+  }
+  .exhibition1 .contant .row .card {
+    margin-right: 80px !important;
+  }
   .log-in .contant {
     width: 80%;
   }
