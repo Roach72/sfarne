@@ -31,20 +31,32 @@ body{
 
 
 .top-menu {
-    .navbar {
-        font-weight: bold;
-        padding: 0 100px !important;
-        background: $main-nav !important;
+    .navbar{
         position: fixed;
-        top: 0;
-        z-index: 3;
-        a > img {
-            width: 50px !important;
+        top: 0px;
+        width: 100%;
+        z-index: 10;
+        background: $main-nav !important;
+ 
+        .navbar-brand{
+            img {
+                width: 40px;
+                margin-right: 50px;
+            }
         }
-        li > a {
-            &:hover {
-                color: $main-color !important;
-                border-bottom: 1px solid $main-color;
+        .collapse{
+            .navbar-nav{
+                margin-left: 100px;
+                .active{
+                    margin-top: 9px;
+                }
+                .nav-item{
+                    .nav-link{
+                        font-size: 18px;
+                        color: $main-color3;
+                        font-weight: bold;
+                    }
+                }
             }
         }
     }
@@ -149,11 +161,15 @@ body{
     padding: 20px 0 20px;
     margin-top: 30px;
     .contant {
-        margin: 100px;
+        .map{
+            iframe{
+                width: 100%;
+            }
+        }
         .titels {
             margin-top: 50px;
             li  {
-                margin-right: 150px;
+
                 padding: 20px;
                 list-style: none;
                 img {
@@ -315,9 +331,65 @@ body{
 
  @media (max-width: 576px) { 
 
-     .log-in{
+    .header { 
         .contant{
-            width: 80%;
+            .carousel-inner{
+                img{
+
+                    height: 300px;
+                }
+            }
         }
     }
+    .Our-services {
+        .row {
+            .center{
+            .card {
+                .card-body{
+                    h5{
+                        font-size: 15px;
+                    }
+                    p {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+      }
+    
+    }
+
+
+.log-in{
+     .contant{
+       width: 80%;
+     }
+    }
   }
+
+.informations {
+    .contant {
+        .card {
+            .card-body {
+                h5{
+                    font-size: 15px;
+                }
+                p{
+
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+ }
+
+
+.exhibition {
+    .contant {
+        .titels{
+            h1 {
+                font-size: 15px;
+            }
+        }
+    }
+}
